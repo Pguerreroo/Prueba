@@ -1,0 +1,93 @@
+##############################
+# Visual Studio
+##############################
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+##############################
+# Build results
+##############################
+
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+build/
+bld/
+
+##############################
+# Rider
+##############################
+
+.idea/
+
+##############################
+# VS Code
+##############################
+
+.vscode/
+
+##############################
+# Logs
+##############################
+
+*.log
+
+##############################
+# OS generated files
+##############################
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+##############################
+# NuGet
+##############################
+
+packages/
+*.nupkg
+*.snupkg
+
+##############################
+# Entity Framework
+##############################
+
+Migrations/*Designer.cs
+Migrations/*.resx
+
+##############################
+# Test Results
+##############################
+
+TestResults/
+
+##############################
+# Publish output
+##############################
+
+publish/
+*.Publish.xml
+SistemaInventario/obj/Debug/net10.0/rpswa.dswa.cache.json
+SistemaInventario/obj/Debug/net10.0/SistemaInventario.AssemblyInfo.cs
+SistemaInventario/obj/Debug/net10.0/SistemaInventario.AssemblyInfoInputs.cache
+SistemaInventario/obj/Debug/net10.0/SistemaInventario.assets.cache
+SistemaInventario/obj/Debug/net10.0/SistemaInventario.GeneratedMSBuildEditorConfig.editorconfig
+SistemaInventario/obj/project.assets.json
+SistemaInventario/obj/project.nuget.cache
+SistemaInventario/obj/SistemaInventario.csproj.nuget.dgspec.json
+SistemaInventario/obj/Debug/net10.0/SistemaInventario.AssemblyInfo.cs
+SistemaInventario/obj/Debug/net10.0/rpswa.dswa.cache.json
+SistemaInventario/obj/Debug/net10.0/SistemaInventario.AssemblyInfo.cs
+SistemaInventario/obj/Debug/net10.0/SistemaInventario.GeneratedMSBuildEditorConfig.editorconfig
+SistemaInventario/obj/project.nuget.cache
