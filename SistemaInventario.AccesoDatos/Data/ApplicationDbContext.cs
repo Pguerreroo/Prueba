@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SistemaInventario.AccesoDatos.Repositorio;
 using SistemaInventario.Modelos;
 using System.Reflection;
 
@@ -22,6 +23,11 @@ namespace SistemaInventario.AccesoDatos.Data
 
             modelBuilder.ApplyConfigurationsFromAssembly(
                 Assembly.GetExecutingAssembly());
+        }
+
+        public static implicit operator ApplicationDbContext(ApplicationDBContext v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
