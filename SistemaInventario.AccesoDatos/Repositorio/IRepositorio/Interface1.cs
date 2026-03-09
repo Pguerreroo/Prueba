@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
+
 
 namespace SistemaInventario.AccesoDatos.Repositorio.IRepositorio
 {
@@ -10,21 +12,22 @@ namespace SistemaInventario.AccesoDatos.Repositorio.IRepositorio
     {
 
 
-        T Obtener(int id);
+        Task<T> Obtener(int id);
 
-        IEnumerable<T>  ObtenerTodos(
+        Task<IEnumerable<T>>  ObtenerTodos(
             Expression<Func<T,  bool>>  filtro =null,
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string incluirPropiedades  = null,
             bool isTracking  = true
             );
 
-        T ObtenerPrimero(
+        Task<T> ObtenerPrimero(
             Expression<Func<T, bool>> filtro =null,
             string incluirPropiedades  = null,
             bool isTracking = true
             );
 
-        void Agregar(T entidad);
+        Task Agregar(T entidad);
 
         void Remover(T entidad);
 
