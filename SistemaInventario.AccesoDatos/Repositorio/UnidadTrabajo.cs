@@ -16,7 +16,7 @@ namespace SistemaInventario.AccesoDatos.Repositorio
             _db = db;
             Bodega = new BodegaRepositorio(_db);
         }
-
+        //hola
 
         public void Dispose()
         {
