@@ -3,6 +3,7 @@ using SistemaInventario.AccesoDatos.Repositorio.IRepositorio;
 using SistemaInventario.Modelos;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SistemaInventario.AccesoDatos.Repositorio
@@ -11,14 +12,14 @@ namespace SistemaInventario.AccesoDatos.Repositorio
     {
 
         private readonly ApplicationDbContext _db;
-        public BodegaRepositorio(ApplicationDBContext db) : base(db)
+        public BodegaRepositorio(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
 
-        public BodegaRepositorio(ApplicationDbContext db) : base(db)
-        {
-        }
+        //public BodegaRepositorio(ApplicationDbContext db) : base(db)
+        //{
+        //}
 
         public void Actualizar(Bodega bodega)
         {

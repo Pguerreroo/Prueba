@@ -25,9 +25,6 @@ namespace SistemaInventario.AccesoDatos.Data
                 Assembly.GetExecutingAssembly());
         }
 
-        public static implicit operator ApplicationDbContext(ApplicationDBContext v)
-        {
-            throw new NotImplementedException();
-        }
+        // Removed obsolete implicit conversion to ApplicationDBContext (duplicate/empty type removed)
     }
 }

@@ -11,7 +11,7 @@ namespace SistemaInventario.AccesoDatos.Repositorio
         private readonly ApplicationDbContext _db;
         public IBodegaRepositorio Bodega { get; private set; }
 
-        public UnidadTrabajo(ApplicationDBContext  db)
+        public UnidadTrabajo(ApplicationDbContext db)
         {
             _db = db;
             Bodega = new BodegaRepositorio(_db);

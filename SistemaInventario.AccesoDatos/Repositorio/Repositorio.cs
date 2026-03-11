@@ -15,17 +15,11 @@ namespace SistemaInventario.AccesoDatos.Repositorio.IRepositorio
 
         private readonly ApplicationDbContext _db;
         internal DbSet<T> dbSet;
-        private ApplicationDBContext db;
 
         public Repositorio(ApplicationDbContext db)
         {
             _db = db;
             this.dbSet = _db.Set<T>();
-        }
-
-        public Repositorio(ApplicationDBContext db)
-        {
-            this.db = db;
         }
 
         public async Task Agregar(T entidad)
